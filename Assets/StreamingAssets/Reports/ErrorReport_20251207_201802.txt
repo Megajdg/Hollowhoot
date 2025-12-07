@@ -1,0 +1,6 @@
+Informe de error de Hollowhoot
+---------------------------------
+Fecha y hora: 07/12/2025 20:18:02
+Archivo: Lenú.xml
+Descripción: Error al leer el archivo XML. Formato incorrecto o archivo corrupto.
+Detalles técnicos: The 'Nombreasdwasd' start tag on line 3 position 6 does not match the end tag of 'Nombre'. Line 3, position 26.

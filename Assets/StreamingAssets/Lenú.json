@@ -1,0 +1,50 @@
+{
+    "Title": "Lenú",
+    "N_Questions": 4,
+    "Questions": [
+        {
+            "text": "¿Cuál es el plan favorito de Lenú?",
+            "timer": 6,
+            "answers": [
+                "Ir al cine",
+                "Ir de compras",
+                "Pasear en un barrio mono",
+                "Ir a la montaña"
+            ],
+            "CorrectAnswer": 2
+        },
+        {
+            "text": "¿Cuál es la comida favorita de Lenú?",
+            "timer": 5,
+            "answers": [
+                "Pizza de pepperoni casera",
+                "Tortilla de patatas",
+                "Canelones con bechamel de Lenú",
+                "Patatas al montón con huevo frito"
+            ],
+            "CorrectAnswer": 2
+        },
+        {
+            "text": "¿En que estación se casaría Lenú?",
+            "timer": 5,
+            "answers": [
+                "Invierno",
+                "Verano",
+                "Primavera",
+                "Otoño"
+            ],
+            "CorrectAnswer": 2
+        },
+        {
+            "text": "¿Cuál es el cantante favorito de Lenú?",
+            "timer": 3,
+            "answers": [
+                "Lana del Rey",
+                "BTS",
+                "Sombr",
+                "Chappell Roan"
+            ],
+            "CorrectAnswer": 0
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Hollowhoot example",
+  "N_Questions": 2,
+  "Questions": [
+    {
+      "text": "¿Cuándo salió Hollow Knight?",
+      "timer": "3",
+      "answers": ["2027", "2017", "962"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Cómo se llama el protagonista?",
+      "timer": "3",
+      "answers": ["El caballero", "Hornet", "Zote", "El Rey Pálido"],
+      "CorrectAnswer": 0
+    }
+  ]
+}
