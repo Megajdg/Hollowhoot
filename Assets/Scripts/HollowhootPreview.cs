@@ -40,12 +40,52 @@ public class HollowhootPreview : MonoBehaviour
     public void RefreshName(string newText)
     {
         PlayerDataManager.Instance.playerData.playerName = newText;
+
+        controller.buttonDictionary.TryGetValue("Start - Button", out var startNameButton);
+        startNameButton.interactable = !string.IsNullOrWhiteSpace(newText);
     }
 
     public void SaveName(string newText)
     {
+        // Validar: no permitir "0"
+        if (newText.Trim() == "")
+        {
+            controller.errorMessageText.text = "El nombre no puede estar vacío";
+            StartCoroutine(DeleteErrorText());
+            PlayerDataManager.Instance.nameText.text = PlayerPrefs.GetString("PlayerName");
+            return;
+        }
+
         PlayerPrefs.SetString("PlayerName", newText);
         PlayerPrefs.Save();
+    }
+
+    private IEnumerator DeleteErrorText()
+    {
+        Color baseColor = controller.errorMessageText.color;
+
+        // Fade in
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime;
+            controller.errorMessageText.color = new Color(baseColor.r, baseColor.g, baseColor.b, Mathf.Lerp(0, 1, t));
+            yield return null;
+        }
+
+        // Mantener visible 3 segundos
+        yield return new WaitForSeconds(3f);
+
+        // Fade out
+        t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime;
+            controller.errorMessageText.color = new Color(baseColor.r, baseColor.g, baseColor.b, Mathf.Lerp(1, 0, t));
+            yield return null;
+        }
+
+        controller.errorMessageText.text = "";
     }
 
     public void StartQuiz(RootData quizData)

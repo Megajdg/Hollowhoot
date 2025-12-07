@@ -1,0 +1,66 @@
+{
+  "Title": "Hollow Knight Quiz",
+  "N_Questions": 10,
+  "Questions": [
+    {
+      "text": "¿Quién desarrolló Hollow Knight?",
+      "timer": "5",
+      "answers": ["Team Cherry", "Supergiant Games", "Capcom", "Nintendo"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Cuál es el arma principal del Caballero?",
+      "timer": "5",
+      "answers": ["Espada", "Nail", "Lanza", "Aguja"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Cómo se llama la moneda del juego?",
+      "timer": "5",
+      "answers": ["Geo", "Oro", "Almas", "Cristales"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué habilidad permite el doble salto?",
+      "timer": "5",
+      "answers": ["Mothwing Cloak", "Monarch Wings", "Shade Cloak", "Crystal Heart"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Cuántos finales distintos tiene Hollow Knight?",
+      "timer": "5",
+      "answers": ["3", "4", "6", "2"],
+      "CorrectAnswer": 2
+    },
+    {
+      "text": "¿Cómo se llama la hermana del Caballero?",
+      "timer": "5",
+      "answers": ["Hornet", "Grimm", "Zote", "Iselda"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué zona inicial explora el jugador?",
+      "timer": "5",
+      "answers": ["Greenpath", "Dirtmouth", "Forgotten Crossroads", "City of Tears"],
+      "CorrectAnswer": 2
+    },
+    {
+      "text": "¿Qué NPC vende mapas?",
+      "timer": "5",
+      "answers": ["Cornifer", "Sly", "Bretta", "Cloth"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué jefe lidera el culto de las llamas?",
+      "timer": "5",
+      "answers": ["Grimm", "Radiance", "Dung Defender", "Nosk"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué amuleto permite curarse más rápido?",
+      "timer": "5",
+      "answers": ["Quick Focus", "Soul Catcher", "Shaman Stone", "Fragile Heart"],
+      "CorrectAnswer": 0
+    }
+  ]
+}

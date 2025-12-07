@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
     {
         yield return null;
 
-        if (sceneName == "MenuScene" && loadingFromEditor == false || sceneName == "MenuScene" && PlayerDataManager.Instance.observing == false)
+        if (sceneName == "MenuScene" && loadingFromEditor == false)
         {
             SetAllPanelsToFalse();
             SetPanel("Main Menu - Panel", true);
@@ -55,6 +55,11 @@ public class UIManager : MonoBehaviour
             SetAllPanelsToFalse();
             SetPanel("Main Menu - Panel", true);
             SetPanel("Hollowhoot Selection - Panel", true);
+        }
+        else if (sceneName == "MenuScene" && PlayerDataManager.Instance.observing == false)
+        {
+            SetAllPanelsToFalse();
+            SetPanel("Main Menu - Panel", true);
         }
         else if (sceneName == "GameScene")
         {
@@ -165,6 +170,11 @@ public class UIManager : MonoBehaviour
     public void EnterReports()
     {
         SetPanel("Report - Panel", true);
+    }
+
+    public void EnterAbout()
+    {
+        SetPanel("About - Panel", true);
     }
 
     public void ExitLeaderboard()

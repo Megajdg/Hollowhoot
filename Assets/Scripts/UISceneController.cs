@@ -14,6 +14,8 @@ public class UISceneController : MonoBehaviour
 
     [SerializeField] public TMP_InputField nameText;
 
+    [SerializeField] public TextMeshProUGUI errorMessageText;
+
     //Almacena las botones a utilizar
     public readonly Dictionary<string, Button> buttonDictionary = new Dictionary<string, Button>();
 
@@ -58,6 +60,14 @@ public class UISceneController : MonoBehaviour
             #region ReportPanel
             buttonDictionary.TryGetValue("Back Report - Button", out var backReportButton);
             backReportButton.onClick.AddListener(() => UIManager.Instance.GoBackToLastPanel());
+            #endregion
+
+            #region AboutPanel
+            buttonDictionary.TryGetValue("About - Button", out var aboutButton);
+            aboutButton.onClick.AddListener(() => UIManager.Instance.EnterAbout());
+
+            buttonDictionary.TryGetValue("Back About - Button", out var backAboutButton);
+            backAboutButton.onClick.AddListener(() => UIManager.Instance.GoBackToLastPanel());
             #endregion
         }
     }

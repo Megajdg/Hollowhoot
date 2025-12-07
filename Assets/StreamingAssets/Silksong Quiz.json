@@ -1,0 +1,66 @@
+{
+  "Title": "Silksong Quiz",
+  "N_Questions": 10,
+  "Questions": [
+    {
+      "text": "¿Quién es la protagonista de Silksong?",
+      "timer": "5",
+      "answers": ["Hornet", "El Caballero", "Zote", "Grimm"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Cómo se llama el nuevo reino donde transcurre Silksong?",
+      "timer": "5",
+      "answers": ["Hallownest", "Pharloom", "Dirtmouth", "Greenpath"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Qué arma utiliza Hornet?",
+      "timer": "5",
+      "answers": ["Nail", "Aguja", "Espada", "Lanza"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Qué recurso usa Hornet para curarse?",
+      "timer": "5",
+      "answers": ["Geo", "Hilo de seda", "Almas", "Cristales"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Qué habilidad permite moverse rápidamente con la aguja?",
+      "timer": "5",
+      "answers": ["Thread Dash", "Needle Spin", "Silk Step", "Hook Dash"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué tipo de enemigos abundan en Pharloom?",
+      "timer": "5",
+      "answers": ["Bestias de seda", "Caballeros caídos", "Sombras", "Insectos mecánicos"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué mecánica sustituye a los amuletos en Silksong?",
+      "timer": "5",
+      "answers": ["Perlas", "Cantos", "Medallones", "Runas"],
+      "CorrectAnswer": 1
+    },
+    {
+      "text": "¿Qué personaje aparece como antagonista en varios trailers?",
+      "timer": "5",
+      "answers": ["Lace", "Radiance", "Zote", "Cornifer"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué habilidad permite engancharse a superficies?",
+      "timer": "5",
+      "answers": ["Needle Grapple", "Silk Bind", "Thread Hook", "Wall Cling"],
+      "CorrectAnswer": 0
+    },
+    {
+      "text": "¿Qué estudio desarrolla Silksong?",
+      "timer": "5",
+      "answers": ["Team Cherry", "FromSoftware", "Capcom", "Nintendo"],
+      "CorrectAnswer": 0
+    }
+  ]
+}

@@ -163,6 +163,14 @@ public class QuestionSelectionController : MonoBehaviour
         string newXmlFileName = quiz.Title + ".xml";
         string newXmlPath = Path.Combine(Application.streamingAssetsPath, newXmlFileName);
 
+        // Comprobar si ya existe otro archivo con ese nombre
+        // (y no es el mismo que estamos editando)
+        if (File.Exists(newJsonPath) && quiz.OriginalFileName != newJsonFileName)
+        {
+            Debug.LogError($"Ya existe un quiz con el nombre '{quiz.Title}'. Cambia el título antes de guardar.");
+            return;
+        }
+
         // Si ya teníamos un archivo original y el nombre cambió
         if (!string.IsNullOrEmpty(quiz.OriginalFileName) && quiz.OriginalFileName != newJsonFileName)
         {
